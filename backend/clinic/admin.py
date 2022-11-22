@@ -1,3 +1,14 @@
 from django.contrib import admin
+from .models import Services, UserService, User
 
-# Register your models here.
+@admin.register(Services)
+class ServicesAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(UserService)
+class UserServiceAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    pass
