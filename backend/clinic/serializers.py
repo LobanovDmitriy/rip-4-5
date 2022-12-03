@@ -1,9 +1,9 @@
 from clinic.models import Services, UserService, User
 from rest_framework import serializers
-from dynamic_rest import serializers as dynserializers
+from dynamic_rest import serializers as dynserializers #dynserializers.DynamicModelSerializer
 
 
-class ServicesSerializer(dynserializers.DynamicModelSerializer):
+class ServicesSerializer(serializers.ModelSerializer):
     class Meta:
         # Модель, которую мы сериализуем
         model = Services
@@ -11,7 +11,7 @@ class ServicesSerializer(dynserializers.DynamicModelSerializer):
         fields = ["idservice", "name", "description", "price"]
 
 
-class UserServiceSerializer(dynserializers.DynamicModelSerializer):
+class UserServiceSerializer(serializers.ModelSerializer):
     class Meta:
         # Модель, которую мы сериализуем
         model = UserService
@@ -19,7 +19,7 @@ class UserServiceSerializer(dynserializers.DynamicModelSerializer):
         fields = ["iduserservice", "id_user", "id_service", "status", "order_date"]
 
 
-class UserSerializer(dynserializers.DynamicModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         # Модель, которую мы сериализуем
         model = User
