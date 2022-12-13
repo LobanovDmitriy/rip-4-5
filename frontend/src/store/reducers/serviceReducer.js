@@ -1,5 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {fetchGetAllServicesAction, fetchGetOneServiceAction} from "../actions/serviceAction";
+import {
+    fetchAddServiceAction, fetchDeleteServiceAction,
+    fetchGetAllServicesAction,
+    fetchGetOneServiceAction,
+    fetchSaveServiceAction
+} from "../actions/serviceAction";
 
 const initialState = {
     fetchStatus: '',
@@ -29,6 +34,30 @@ const serviceSlice = createSlice({
             console.log('fetchGetOneServiceAction.fulfilled')
             state.fetchStatus = 'fulfilled'
             state.service = payload
+        })
+        builder.addCase(fetchSaveServiceAction.pending, (state)=>{
+            console.log('fetchSaveServiceAction.pending')
+            state.fetchStatus = 'pending'
+        });
+        builder.addCase(fetchSaveServiceAction.fulfilled, (state, {payload})=>{
+            console.log('fetchSaveServiceAction.fulfilled')
+            state.fetchStatus = 'fulfilled'
+        })
+        builder.addCase(fetchDeleteServiceAction.pending, (state)=>{
+            console.log('fetchDeleteServiceAction.pending')
+            state.fetchStatus = 'pending'
+        });
+        builder.addCase(fetchDeleteServiceAction.fulfilled, (state, {payload})=>{
+            console.log('fetchDeleteServiceAction.fulfilled')
+            state.fetchStatus = 'fulfilled'
+        })
+        builder.addCase(fetchAddServiceAction.pending, (state)=>{
+            console.log('fetchAddServiceAction.pending')
+            state.fetchStatus = 'pending'
+        });
+        builder.addCase(fetchAddServiceAction.fulfilled, (state)=>{
+            console.log('fetchAddServiceAction.fulfilled')
+            state.fetchStatus = 'fulfilled'
         })
     }})
 

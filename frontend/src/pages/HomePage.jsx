@@ -45,7 +45,7 @@ export const HomePage = () =>{
             </div>
         </div>
         <div className="flex flex-col gap-2 p-4">
-            {services.map(service => <Link to={`/service/${service.idservice}`} key={service.idservice} className="w-1/3 text-xl font-semibold py-2 px-4 border-2 rounded-md border-red-500">{service.name}</Link>)}
+            {services.map(service => <Link to={`/service/${service.idservice}`} key={service.idservice} className="w-1/3 text-xl font-semibold py-2 px-4 border-2 rounded-md border-red-500"><p>{service.name}</p><p className="text-sm">{service.price} ₽</p></Link>)}
         </div>
     </div>
 }

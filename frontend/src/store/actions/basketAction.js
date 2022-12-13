@@ -1,5 +1,10 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
-import {fetchAddToBasket, fetchGetBasket, fetchRemoveFromBasket} from "../../api/services/basketService";
+import {
+    fetchAddToBasket,
+    fetchGetBasket,
+    fetchGetUserBasket,
+    fetchRemoveFromBasket, fetchUpdateBasketStatus
+} from "../../api/services/basketService";
 
 export const fetchGetBasketAction = createAsyncThunk('getBasket/fetchGetBasket',
     async () =>{
@@ -14,4 +19,14 @@ export const fetchAddToBasketAction = createAsyncThunk('addToBasket/fetchAddToBa
 export const fetchRemoveFromBasketAction = createAsyncThunk('removeFromBasket/fetchRemoveFromBasket',
     async (pk) =>{
         return await fetchRemoveFromBasket(pk)
+    })
+
+export const fetchGetUserBasketAction = createAsyncThunk('getUserBasket/fetchRemoveFromBasket',
+    async (values) =>{
+        return await fetchGetUserBasket(values)
+    })
+
+export const fetchUpdateBasketStatusAction = createAsyncThunk('updateBasketStatus/fetchUpdateBasketStatus',
+    async (values) =>{
+        return await fetchUpdateBasketStatus(values)
     })

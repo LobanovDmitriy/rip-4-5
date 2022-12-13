@@ -1,5 +1,10 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {fetchAddToBasketAction, fetchGetBasketAction, fetchRemoveFromBasketAction} from "../actions/basketAction";
+import {
+    fetchAddToBasketAction,
+    fetchGetBasketAction,
+    fetchGetUserBasketAction,
+    fetchRemoveFromBasketAction, fetchUpdateBasketStatusAction
+} from "../actions/basketAction";
 
 const initialState = {
     fetchStatus: '',
@@ -38,6 +43,23 @@ const basketSlice = createSlice({
         builder.addCase(fetchRemoveFromBasketAction.fulfilled, (state)=>{
             console.log('fetchRemoveFromBasketAction.fulfilled')
             state.fetchActionStatus = 'fulfilled'
+        })
+        builder.addCase(fetchGetUserBasketAction.pending, (state)=>{
+            console.log('fetchGetUserBasketAction.pending')
+            state.fetchStatus = 'pending'
+        });
+        builder.addCase(fetchGetUserBasketAction.fulfilled, (state, {payload})=>{
+            console.log('fetchGetUserBasketAction.fulfilled')
+            state.fetchStatus = 'fulfilled'
+            state.services = payload
+        })
+        builder.addCase(fetchUpdateBasketStatusAction.pending, (state)=>{
+            console.log('fetchUpdateBasketStatusAction.pending')
+            state.fetchStatus = 'pending'
+        });
+        builder.addCase(fetchUpdateBasketStatusAction.fulfilled, (state, {payload})=>{
+            console.log('fetchUpdateBasketStatusAction.fulfilled')
+            state.fetchStatus = 'fulfilled'
         })
     }})
 

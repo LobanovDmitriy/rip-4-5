@@ -3,13 +3,13 @@ import {fetchAddToBasketAction} from "../store/actions/basketAction";
 import dayjs from "dayjs";
 
 export const Service = ({service}) => {
-    const {authorized} = useSelector(store=>store.user)
+    const {authorized, user} = useSelector(store=>store.user)
     const dispatch = useDispatch()
     const handleAdd = () => {
         const order_date = dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss')
         const values = {
             id_service:service.idservice,
-            id_user:2,
+            id_user:user.id,
             status: 0,
             order_date,
         }

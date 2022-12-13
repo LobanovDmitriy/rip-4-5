@@ -2,56 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="433533b6-935e-41c0-8886-75cdbcade5a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/services/basketService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/BasketCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/hooks/useDebounce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/BasketPage.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/actions/basketAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/basketReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/reducers/userReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lab4-5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab4-5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/services/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/api/services/userService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ManagerBasketCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ManagerService.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ManagerAddServicePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ManagerOrdersPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ManagerPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ManagerServicePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/ManagerServicesPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/RegistrationPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/SigninPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/static/SeekPng.com_scrubs-png_3136999.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/actions/authAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/actions/userAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/clinic/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/clinic/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/clinic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/clinic/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/clinic/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/clinic/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/clinic/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/clinic/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/api/services/basketService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/services/basketService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/api/services/serviceService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/api/services/serviceService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/BasketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/BasketCard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LinkRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LinkRoute.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/LinkStyled.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/LinkStyled.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Service.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Service.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/BasketPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/BasketPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/HomePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/NewPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ServicePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ServicePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/actions/basketAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/actions/basketAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/actions/serviceAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/actions/serviceAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/reducers/basketReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/reducers/basketReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/reducers/serviceReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/reducers/serviceReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Service.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NewPage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ServicePage.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/reducers/userReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +51,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -90,11 +81,13 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\WebstormProjects\lab4-5\frontend\src\static" />
       <recent name="C:\Users\user\WebstormProjects\lab4-5\src\components" />
     </key>
   </component>
@@ -141,6 +134,16 @@
       <workItem from="1669753488154" duration="14757000" />
       <workItem from="1669769243699" duration="1955000" />
       <workItem from="1669800738236" duration="4684000" />
+      <workItem from="1670054145212" duration="179000" />
+      <workItem from="1670165595587" duration="7359000" />
+      <workItem from="1670228855647" duration="35000" />
+      <workItem from="1670229402190" duration="873000" />
+      <workItem from="1670261008785" duration="8964000" />
+      <workItem from="1670271556610" duration="10265000" />
+      <workItem from="1670331549217" duration="9856000" />
+      <workItem from="1670355822939" duration="16580000" />
+      <workItem from="1670432354019" duration="8354000" />
+      <workItem from="1670876139937" duration="11344000" />
     </task>
     <servers />
   </component>
