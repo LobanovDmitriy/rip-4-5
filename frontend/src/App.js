@@ -7,9 +7,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {SigninPage} from "./pages/SigninPage";
 import {RegistrationPage} from "./pages/RegistrationPage";
 import {useEffect} from "react";
-import {fetchRefreshAction} from "./store/actions/authAction";
 import {fetchGetUserAction} from "./store/actions/userAction";
-import {ManagerPage} from "./pages/ManagerPage";
+import {ManagerLayout} from "./components/ManagerLayout";
 import {ManagerOrdersPage} from "./pages/ManagerOrdersPage";
 import {ManagerServicesPage} from "./pages/ManagerServicesPage";
 import {ManagerServicePage} from "./pages/ManagerServicePage";
@@ -37,11 +36,27 @@ function App() {
               <Route path="*" element={<Navigate to="/" replace/>}/>
               <Route path='/auth/signin' element={<SigninPage />} />
               <Route path='/auth/signup' element={<RegistrationPage />} />
-              <Route path='/manager' element={<ManagerPage />} />
-              <Route path='/manager/orders' element={<ManagerOrdersPage />} />
-              <Route path='/manager/services' element={<ManagerServicesPage />} />
-              <Route path="/manager/service/:id" element={<ManagerServicePage />}/>
-              <Route path="/manager/service/add" element={<ManagerAddServicePage />}/>
+              <Route path='/manager' element={<ManagerLayout />} />
+              <Route path='/manager/orders' element={
+                  <ManagerLayout>
+                      <ManagerOrdersPage />
+                  </ManagerLayout>
+              } />
+              <Route path='/manager/services' element={
+                  <ManagerLayout>
+                      <ManagerServicesPage />
+                  </ManagerLayout>
+              } />
+              <Route path="/manager/service/:id" element={
+                  <ManagerLayout>
+                      <ManagerServicePage />
+                  </ManagerLayout>
+              }/>
+              <Route path="/manager/service/add" element={
+                  <ManagerLayout>
+                      <ManagerAddServicePage />
+                  </ManagerLayout>
+              }/>
           </Routes>
       </div>
   );

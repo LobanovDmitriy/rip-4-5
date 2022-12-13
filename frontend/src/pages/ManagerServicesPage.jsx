@@ -1,15 +1,21 @@
 import {Link, useNavigate} from "react-router-dom";
-import {useLocation} from "react-router";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
+import {fetchGetAllServicesAction} from "../store/actions/serviceAction";
 
 export const ManagerServicesPage = () =>{
     const navigate = useNavigate();
+    const dispatch = useDispatch()
     const {services} = useSelector(store=>store.service)
     const {authorized, user} = useSelector(store => store.user)
 
     const handleTab = () => {
         navigate(`/manager/service/add`);
     };
+    useEffect(()=>{
+        dispatch(fetchGetAllServicesAction())
+
+    }, [dispatch])
 
     return (
         <div>

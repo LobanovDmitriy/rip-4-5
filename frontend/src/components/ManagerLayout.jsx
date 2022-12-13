@@ -1,15 +1,22 @@
 import {Link, useNavigate} from "react-router-dom";
 import {useLocation} from "react-router";
 import {useSelector} from "react-redux";
-import {LinkRoute} from "../components/LinkRoute";
+import {LinkRoute} from "./LinkRoute";
+import {useEffect} from "react";
 
-export const ManagerPage = () =>{
+export const ManagerLayout = ({children}) =>{
     const navigate = useNavigate();
     const {authorized, user} = useSelector(store => store.user)
 
     const handleTab = (path) => {
         navigate(`/manager/${path}`);
     };
+
+    useEffect(()=>{
+        if(!localStorage.getItem('access')){
+            navigate('/')
+        }
+    },[navigate])
 
     return (
         <div>
@@ -26,6 +33,7 @@ export const ManagerPage = () =>{
                     </button>
                 </div>
                 )}
+            {children}
         </div>
     );
 };
