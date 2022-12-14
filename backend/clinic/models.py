@@ -14,7 +14,7 @@ class Services(models.Model):
     class Meta:
         managed = False
         db_table = 'services'
-        app_label = 'polls'
+        app_label = 'clinic'
         verbose_name_plural = "Сервисы"
 
 
@@ -47,5 +47,5 @@ class UserService(models.Model):
     class Meta:
         managed = False
         db_table = 'user_service'
-        app_label = 'polls'
+        app_label = 'clinic'
         verbose_name_plural = "Сервисы пользователей"

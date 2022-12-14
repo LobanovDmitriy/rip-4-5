@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="433533b6-935e-41c0-8886-75cdbcade5a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ManagerPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ManagerLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ManagerServicesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ManagerServicesPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/clinic/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/clinic/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ManagerBasketCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ManagerBasketCard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +109,9 @@
       <workItem from="1670432354019" duration="8354000" />
       <workItem from="1670876139937" duration="11578000" />
       <workItem from="1670935404246" duration="1465000" />
+      <workItem from="1670942530679" duration="931000" />
+      <workItem from="1670961150232" duration="2358000" />
+      <workItem from="1671009868698" duration="2233000" />
     </task>
     <servers />
   </component>
